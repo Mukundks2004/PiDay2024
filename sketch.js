@@ -1,4 +1,4 @@
-export default function sketch(p) {
+const sketch = (p) => {
     let angle = 0;
     let originX = 200;
     let originY = 300;
@@ -47,4 +47,6 @@ export default function sketch(p) {
         }
         p.noFill();
     };
-  }
+}
+
+new p5(sketch, 'sketchContainer');
